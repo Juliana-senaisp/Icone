@@ -1,0 +1,49 @@
+/* RESET CSS */
+* {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+/* APENAS AUMENTAR O TEXTO PARA VISUALIZAR MELHOR */
+a {
+    font: 500 30px 'Lucida', sans-serif;
+    color: black;
+}
+
+/* DEIXANDO O MENU ALINHADO E DESTACANDO PARA VISUALIZAR MELHOR */
+.nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: coral;
+    height: 80px;
+}
+
+/* ESCONDENDO OS ICONES */
+nav ul.menu-icones {
+    display: none;
+}
+
+/* DEFININDO O TAMANHO DELES */
+.menu-icone {
+    width: 50px;
+}
+
+@media screen and (max-width:400px) {
+    /* ESCONDENDO OS TEXTOS */
+    nav ul.menu-item {
+        display: none;
+    } 
+
+    /* MOSTRANDO OS ICONES */
+    nav ul.menu-icones {
+        display: flex;
+    }
+
+}
